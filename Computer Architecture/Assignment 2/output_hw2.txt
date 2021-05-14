@@ -1,0 +1,153 @@
+please enter your first floating point number and new-line: 34.5
+please enter your second floating point number and new-line: 1.25
+
+Original pattern of Float 1: 0 1000 0100 000 1010 0000 0000 0000 0000
+Original pattern of Float 2: 0 0111 1111 010 0000 0000 0000 0000 0000
+
+Bit pattern of result: 0 1000 0100 000 1111 0000 0000 0000 0000
+
+EMULATED FLOATING RESULT FROM PRINTF ==>>> 35.75
+HARDWARE FLOATING RESULT FROM PRINTF ==>>> 35.75
+
+-------------------------------------------------------------------------------
+
+please enter your first floating point number and new-line: 2.75e3
+please enter your second floating point number and new-line: 256.0
+
+Original pattern of Float 1: 0 1000 1010 010 1011 1110 0000 0000 0000
+Original pattern of Float 2: 0 1000 0111 000 0000 0000 0000 0000 0000
+
+Bit pattern of result: 0 1000 1010 011 1011 1110 0000 0000 0000
+
+EMULATED FLOATING RESULT FROM PRINTF ==>>> 3006
+HARDWARE FLOATING RESULT FROM PRINTF ==>>> 3006
+
+-------------------------------------------------------------------------------
+
+please enter your first floating point number and new-line: 1.4e-3
+please enter your second floating point number and new-line: 13.0
+
+Original pattern of Float 1: 0 0111 0101 011 0111 1000 0000 0011 0100
+Original pattern of Float 2: 0 1000 0010 101 0000 0000 0000 0000 0000
+
+Bit pattern of result: 0 1000 0010 101 0000 0000 0101 1011 1100
+
+EMULATED FLOATING RESULT FROM PRINTF ==>>> 13.0014
+HARDWARE FLOATING RESULT FROM PRINTF ==>>> 13.0014
+
+-------------------------------------------------------------------------------
+
+please enter your first floating point number and new-line: 7.491
+please enter your second floating point number and new-line: 4.617e20
+
+Original pattern of Float 1: 0 1000 0001 110 1111 1011 0110 0100 0110
+Original pattern of Float 2: 0 1100 0011 100 1000 0011 1010 1111 1111
+
+Bit pattern of result: 0 1100 0100 000 0010 0001 0100 0100 1001
+
+EMULATED FLOATING RESULT FROM PRINTF ==>>> 5.99885e+20
+HARDWARE FLOATING RESULT FROM PRINTF ==>>> 4.617e+20
+
+-------------------------------------------------------------------------------
+
+please enter your first floating point number and new-line: 9643.0
+please enter your second floating point number and new-line: 1.237e-2
+
+Original pattern of Float 1: 0 1000 1100 001 0110 1010 1100 0000 0000
+Original pattern of Float 2: 0 0111 1000 100 1010 1010 1011 1000 1010
+
+Bit pattern of result: 0 1000 1100 001 0110 1010 1100 0000 1100
+
+EMULATED FLOATING RESULT FROM PRINTF ==>>> 9643.01
+HARDWARE FLOATING RESULT FROM PRINTF ==>>> 9643.01
+
+-------------------------------------------------------------------------------
+
+please enter your first floating point number and new-line: 25e37
+please enter your second floating point number and new-line: 15e37
+
+Original pattern of Float 1: 0 1111 1110 011 1100 0001 0100 0100 0000
+Original pattern of Float 2: 0 1111 1101 110 0001 1011 0001 1110 0110
+
+Bit pattern of result: 0 1111 1111 000 0000 0000 0000 0000 0000
+
+EMULATED FLOATING RESULT FROM PRINTF ==>>> inf
+HARDWARE FLOATING RESULT FROM PRINTF ==>>> inf
+
+-------------------------------------------------------------------------------
+
+please enter your first floating point number and new-line: 88.0
+please enter your second floating point number and new-line: 0.8125
+
+Original pattern of Float 1: 0 1000 0101 011 0000 0000 0000 0000 0000
+Original pattern of Float 2: 0 0111 1110 101 0000 0000 0000 0000 0000
+
+Bit pattern of result: 0 1000 0101 011 0001 1010 0000 0000 0000
+
+EMULATED FLOATING RESULT FROM PRINTF ==>>> 88.8125
+HARDWARE FLOATING RESULT FROM PRINTF ==>>> 88.8125
+
+-------------------------------------------------------------------------------
+
+please enter your first floating point number and new-line: 120.0
+please enter your second floating point number and new-line: 13.5
+
+Original pattern of Float 1: 0 1000 0101 111 0000 0000 0000 0000 0000
+Original pattern of Float 2: 0 1000 0010 101 1000 0000 0000 0000 0000
+
+Bit pattern of result: 0 1000 0110 000 0101 1000 0000 0000 0001
+
+EMULATED FLOATING RESULT FROM PRINTF ==>>> 133.5
+HARDWARE FLOATING RESULT FROM PRINTF ==>>> 133.5
+
+-------------------------------------------------------------------------------
+
+please enter your first floating point number and new-line: 120.0
+please enter your second floating point number and new-line: 108.0
+
+Original pattern of Float 1: 0 1000 0101 111 0000 0000 0000 0000 0000
+Original pattern of Float 2: 0 1000 0101 101 1000 0000 0000 0000 0000
+
+Bit pattern of result: 0 1000 0110 110 0100 0000 0000 0000 0000
+
+EMULATED FLOATING RESULT FROM PRINTF ==>>> 228
+HARDWARE FLOATING RESULT FROM PRINTF ==>>> 228
+
+-------------------------------------------------------------------------------
+
+please enter your first floating point number and new-line: 0
+please enter your second floating point number and new-line: 34.5
+
+Original pattern of Float 1: 0 0000 0000 000 0000 0000 0000 0000 0000
+Original pattern of Float 2: 0 1000 0100 000 1010 0000 0000 0000 0000
+
+Bit pattern of result: 0 1000 0100 000 1010 0000 0000 0000 0000
+
+EMULATED FLOATING RESULT FROM PRINTF ==>>> 34.5
+HARDWARE FLOATING RESULT FROM PRINTF ==>>> 34.5
+
+-------------------------------------------------------------------------------
+
+please enter your first floating point number and new-line: 34.5
+please enter your second floating point number and new-line: 0
+
+Original pattern of Float 1: 0 1000 0100 000 1010 0000 0000 0000 0000
+Original pattern of Float 2: 0 0000 0000 000 0000 0000 0000 0000 0000
+
+Bit pattern of result: 0 1000 0100 000 1010 0000 0000 0000 0000
+
+EMULATED FLOATING RESULT FROM PRINTF ==>>> 34.5
+HARDWARE FLOATING RESULT FROM PRINTF ==>>> 34.5
+
+-------------------------------------------------------------------------------
+
+please enter your first floating point number and new-line: 0
+please enter your second floating point number and new-line: 0
+
+Original pattern of Float 1: 0 0000 0000 000 0000 0000 0000 0000 0000
+Original pattern of Float 2: 0 0000 0000 000 0000 0000 0000 0000 0000
+
+Bit pattern of result: 0 0000 0000 000 0000 0000 0000 0000 0000
+
+EMULATED FLOATING RESULT FROM PRINTF ==>>> 0
+HARDWARE FLOATING RESULT FROM PRINTF ==>>> 0

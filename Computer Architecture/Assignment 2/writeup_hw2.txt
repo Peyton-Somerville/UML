@@ -1,0 +1,21 @@
+Email: peyton_somerville@student.uml.edu
+
+I think my degree of success for this project is 100% or 95%.
+
+I approached this project by first figuring out how to add the floating point numbers that did not have any carry out bits, then figured out how to add with a 10 HB + carry out, then how to add with a 11 HB + carry out, and the finally made sure it worked for weird cases, like ones that goes to infinity or with adding 0.
+
+
+My only issue with the program is with this test case:
+
+please enter your first floating point number and new-line: 7.491
+please enter your second floating point number and new-line: 4.617e20
+
+Original pattern of Float 1: 0 1000 0001 110 1111 1011 0110 0100 0110
+Original pattern of Float 2: 0 1100 0011 100 1000 0011 1010 1111 1111
+
+Bit pattern of result: 0 1100 0100 000 0010 0001 0100 0100 1001
+
+EMULATED FLOATING RESULT FROM PRINTF ==>>> 5.99885e+20
+HARDWARE FLOATING RESULT FROM PRINTF ==>>> 4.617e+20
+
+I know you said that sometimes the emulated and hardware results are a little different due to different rounding, but I am not sure if this is one of those cases since it seems like the difference between the two numbers is somewhat large, but that might just be because it is to the power of 20 so a small rounding difference could make that much of an impact. All of my other test cases work, so I think it is just due to a rounding difference.
