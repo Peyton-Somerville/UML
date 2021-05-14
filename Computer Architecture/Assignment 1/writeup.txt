@@ -1,0 +1,7 @@
+Email: peyton_somerville@student.uml.edu
+
+I think my degree of success for this project is a 100%.
+
+I approached this project by looking through the float_32 union and finding out what each variable represents, and then printed the corresponding ones to get the desired output.
+
+I do not believe there are any problems with this program.
