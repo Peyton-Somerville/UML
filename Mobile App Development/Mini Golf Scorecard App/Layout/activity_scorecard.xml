@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#539837"
+    tools:context=".ScorecardActivity">
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="660dp"
+        android:background="#E65757"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:onClick="confirmResetCard"
+        android:text="@string/reset"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="321dp"
+        android:layout_height="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="@string/p1"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="@string/p2"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="@string/p3"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="@string/p4"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="485dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.896">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="85dp">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole1"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole2"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button21"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button22"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button23"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button24"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole3"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button31"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button32"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button33"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button34"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole4"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button41"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button42"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button43"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button44"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole5"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button51"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button52"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button53"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button54"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole6"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button61"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button62"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button63"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button64"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole7"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button71"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button72"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button73"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button74"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole8"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button81"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button82"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button83"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button84"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole9"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button91"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button92"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button93"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button94"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole10"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button101"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button102"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button103"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button104"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole11"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button111"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button112"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button113"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button114"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole12"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button121"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button122"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button123"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button124"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole13"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button131"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button132"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button133"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button134"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole14"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button141"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button142"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button143"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button144"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole15"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button151"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button152"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button153"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button154"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole16"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button161"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button162"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button163"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button164"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole17"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button171"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button172"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button173"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button174"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/hole18"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button181"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button182"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button183"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button184"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:onClick="sendToScoreInput"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="618dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="@string/total"
+            android:textColor="#131313"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="33dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonScoreP1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="false"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonScoreP2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="false"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonScoreP3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="false"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonScoreP4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="false"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <ImageButton
+        android:id="@+id/btnSettingsGear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/settingsGear"
+        android:onClick="sendToSettings"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/blackgear40x44" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="81dp"
+        android:layout_height="40dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/addP"
+        android:onClick="addPlayer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <TextView
+        android:id="@+id/txtAddPlayer"
+        android:layout_width="71dp"
+        android:layout_height="43dp"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:text="@string/addP"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TableLayout
+        android:id="@+id/tableScoreSelect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#539837"
+        android:gravity="bottom"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnScore1"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:onClick="scoreInput"
+                android:text="@string/num1"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnScore2"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:onClick="scoreInput"
+                android:text="@string/num2"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnScore3"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:onClick="scoreInput"
+                android:text="@string/num3"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnScore4"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:onClick="scoreInput"
+                android:text="@string/num4"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnScore5"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:onClick="scoreInput"
+                android:text="@string/num5"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnScore6"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:onClick="scoreInput"
+                android:text="@string/num6"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnScore7"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:onClick="scoreInput"
+                android:text="@string/num7"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnScore8"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:onClick="scoreInput"
+                android:text="@string/num8"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnScore9"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:onClick="scoreInput"
+                android:text="@string/num9"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnScore10"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:onClick="scoreInput"
+                android:text="@string/num10"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnScore11"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:onClick="scoreInput"
+                android:text="@string/num11"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnScore12"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:onClick="scoreInput"
+                android:text="@string/num12"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/btnNoScore"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:onClick="scoreInput"
+                app:srcCompat="@android:drawable/ic_delete" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnStrOut"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:onClick="scoreInput"
+                android:text="@string/strOut"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="68dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="352dp"
+        android:layout_marginRight="352dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:onClick="backToScreen2"
+        android:text="@string/back"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
