@@ -1,0 +1,2 @@
+./masm < HW3.asm > HW3.obj
+./mic1 prom.dat HW3.obj 0 2048

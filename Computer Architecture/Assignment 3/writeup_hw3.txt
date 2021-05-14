@@ -1,0 +1,5 @@
+Email: peyton_somerville@student.uml.edu
+
+I think my degree of success for this project is 100%.
+
+I approached this project by first going through the iterative version in both C and assembly and the recursive version in C and making sense of those. Then starting with the code for the iterative version in assembly, I mostly changed the FIB function. I needed to load in fib(n-1) and fib(n-2) and store their sum in tmp, change the PasCnt, and update the stack, then just recursively loop for all numbers.
