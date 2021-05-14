@@ -1,0 +1,115 @@
+[psomervi@mercury2 Peyton_Somerville_hw5]$ ./mic1 prom_mrd.dat HW5.obj 2048 0
+
+Read in 152 micro instructions
+Read in 179 machine instructions
+Please enter a 1-5 digit number followed by enter
+235
+Please enter a 1-5 digit number followed by enter
+0
+235          ***Here is one of the issues I mentioned, does not print "sum = " ***
+
+ProgramCounter : 0000000001000011  base 10:      67
+Accumulator    : 0000000000000000  base 10:       0
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1000000000000000  base 10:   32768
+StackPointer   : 0000111101111110  base 10:    3966
+ARegister      : 1111111111110101  base 10:   65525
+BRegister      : 1111111111110110  base 10:   65526
+CRegister      : 0000000000000000  base 10:       0
+DRegister      : 0000000000000010  base 10:       2
+ERegister      : 0000000000000000  base 10:       0
+FRegister      : 0000000000000000  base 10:       0
+
+Total cycles   : 1169662
+
+--------------------------------------------------------------------------------------
+
+[psomervi@mercury2 Peyton_Somerville_hw5]$ ./mic1 prom_mrd.dat HW5.obj 2048 0
+
+Read in 152 micro instructions
+Read in 179 machine instructions
+Please enter a 1-5 digit number followed by enter
+16341
+Please enter a 1-5 digit number followed by enter
+957
+17298
+
+ProgramCounter : 0000000001000011  base 10:      67
+Accumulator    : 0000000000000000  base 10:       0
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1000000000000000  base 10:   32768
+StackPointer   : 0000111101111110  base 10:    3966
+ARegister      : 1111111111110101  base 10:   65525
+BRegister      : 1111111111110110  base 10:   65526
+CRegister      : 0000000000000000  base 10:       0
+DRegister      : 0000000000000001  base 10:       1
+ERegister      : 0000000000000000  base 10:       0
+FRegister      : 0000000000000000  base 10:       0
+
+Total cycles   : 1832430
+
+--------------------------------------------------------------------------------------
+
+[psomervi@mercury2 Peyton_Somerville_hw5]$ ./mic1 prom_mrd.dat HW5.obj 2048 0
+
+Read in 152 micro instructions
+Read in 179 machine instructions
+Please enter a 1-5 digit number followed by enter
+23786
+Please enter a 1-5 digit number followed by enter
+12400
+Sum overflowed
+
+*** Here is the other issue, doesnt print the table after ***
+
+--------------------------------------------------------------------------------------
+
+[psomervi@mercury2 Peyton_Somerville_hw5]$ ./mic1 prom_mrd.dat HW5.obj 2048 0
+
+Read in 152 micro instructions
+Read in 179 machine instructions
+Please enter a 1-5 digit number followed by enter
+12
+Please enter a 1-5 digit number followed by enter
+23
+35
+
+ProgramCounter : 0000000001000011  base 10:      67
+Accumulator    : 0000000000000000  base 10:       0
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1000000000000000  base 10:   32768
+StackPointer   : 0000111101111110  base 10:    3966
+ARegister      : 1111111111110101  base 10:   65525
+BRegister      : 1111111111110110  base 10:   65526
+CRegister      : 0000000000000000  base 10:       0
+DRegister      : 0000000000000011  base 10:       3
+ERegister      : 0000000000000000  base 10:       0
+FRegister      : 0000000000000000  base 10:       0
+
+Total cycles   : 938980
+
+--------------------------------------------------------------------------------------
+
+[psomervi@mercury2 Peyton_Somerville_hw5]$ ./mic1 prom_mrd.dat HW5.obj 2048 0
+
+Read in 152 micro instructions
+Read in 179 machine instructions
+Please enter a 1-5 digit number followed by enter
+1
+Please enter a 1-5 digit number followed by enter
+1343
+1344
+
+ProgramCounter : 0000000001000011  base 10:      67
+Accumulator    : 0000000000000000  base 10:       0
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1000000000000000  base 10:   32768
+StackPointer   : 0000111101111110  base 10:    3966
+ARegister      : 1111111111110101  base 10:   65525
+BRegister      : 1111111111110110  base 10:   65526
+CRegister      : 0000000000000000  base 10:       0
+DRegister      : 0000000000000001  base 10:       1
+ERegister      : 0000000000000000  base 10:       0
+FRegister      : 0000000000000000  base 10:       0
+
+Total cycles   : 2862507
