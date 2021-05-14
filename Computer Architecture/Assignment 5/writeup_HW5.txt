@@ -1,0 +1,5 @@
+Email: peyton_somerville@student.uml.edu
+
+I think my degree of success for this project is 90%.
+
+I started with the template code given. From there I implemented the addnms function, and added functions to handle overflow, and to handle the final conversion and displaying to the screen. Everything seems to work fine except for a couple of problems. The first problem is when I wanted the print the message "The sum = " before the sum result, but the message would cause the program to enter an infite loop, and it wouldnt display the actual sum or the table after with the program counter, accumulator, instructionReg, etc. So I just got rid of the "The sum = " message and it works fine. Then theres a similar issue with printing "Sum overflowed" where it would not show the table with the program counter and stuff, but it still correctly identifies when there has been an overflow.

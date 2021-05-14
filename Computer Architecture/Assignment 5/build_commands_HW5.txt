@@ -1,0 +1,2 @@
+./masm_mrd < HW5.asm > HW5.obj
+./mic1 prom_mrd.dat HW5.obj 2048 0
