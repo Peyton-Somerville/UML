@@ -119,8 +119,11 @@ public:
 
 private:
 	Tombstone<T>* ptr;
-};template <class T>
+};
+
+
+template <class T>
 bool operator==(const int n, const Pointer<T>& t) { return t == n; }
 
 template <class T>
-bool operator!=(const int n, const Pointer<T>& t) { return t != n; }
+bool operator!=(const int n, const Pointer<T>& t) { return t != n; }
