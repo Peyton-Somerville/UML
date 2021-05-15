@@ -121,7 +121,6 @@ private:
 	Tombstone<T>* ptr;
 };
 
-
 template <class T>
 bool operator==(const int n, const Pointer<T>& t) { return t == n; }
 
