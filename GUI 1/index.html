@@ -1,0 +1,55 @@
+<!--
+File: index.html
+GUI Assignment: Creating an Interactive Dynamic Table 
+This webpage creates a dynamic multiplication table based on user input using HTML, CSS, and JavaScript.
+Peyton Somerville
+10/16/2021
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Multiplication Table Generator</title>
+        <meta charset="utf-8">
+        <link href="css/HW3Style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Multiplication Table Generator</h1>
+        <h3>Fill in the form with integer values between -200 and 200.</h3>
+
+        <div id="userInput">
+            <form>
+                <ul class="wrapper">
+                    <li class="form-row">
+                        <label for="minColVal">Minimum Column Value</label>
+                        <input type="text" id="minColVal" placeholder="default value 1"><br>
+                    </li>
+                    <li class="form-row">
+                        <label for="maxColVal">Maximum Column Value</label>
+                        <input type="text" id="maxColVal" placeholder="default value 10"><br>
+                    </li>
+                    <li class="form-row">
+                        <label for="minRowVal">Minimum Row Value</label>
+                        <input type="text" id="minRowVal" placeholder="default value 1"><br>
+                    </li>
+                    <li class="form-row">
+                        <label for="maxRowVal">Maximum Row Value</label>
+                        <input type="text" id="maxRowVal" placeholder="default value 10"><br>
+                    </li>
+                    <li class="form-row">
+                        <button type="submit" onclick="return genTable()">Generate Table</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+        <!-- Invalid input will display error messages in this div -->
+        <div id="errorMessages"></div>
+
+        <!-- The multiplication table will be built in this div -->
+        <div id="multTable"></div>
+
+        <script src="js/HW3JavaScript.js"></script>
+    </body>
+</html>
