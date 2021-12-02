@@ -1,0 +1,121 @@
+/*
+File: css/HW4P2Style.css
+GUI Assignment 4: Using the jQuery Plugin/UI with Your Dynamic Table
+Part 2: jQuery UI Slider and Tab Widgets
+
+This webpage creates a dynamic multiplication table based on user input using HTML, CSS, and JavaScript. 
+The user input is now validated with jQeury.
+The user can now adjust form values with jQuery sliders, and save tables with jQuery tabs.
+
+Peyton Somerville
+11/6/2021
+*/
+
+body {
+    background-color: #81b5df;
+}
+h1, h3{
+    text-align: center;
+}
+
+/* form format */
+#userInput {
+    margin: auto;
+    width: 590px;
+}
+.wrapper {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    list-style-type: none;
+    padding: 5px;
+    font-size: 90%;
+}
+li {
+    padding: 5px;
+}
+label {
+    float: left;
+    padding: 5px 20px 5px 20px;
+    font-size: 110%;
+}
+input {
+    float: right;
+    margin: 3px 10px 5px 0px;
+}
+#saveBtn {
+    margin: 5px 10px 5px 242px;
+}
+
+
+#multTable {
+    overflow: auto;   /* makes table scrollable when too big for screen */
+    max-height: 600px;
+}
+
+table {
+    margin: auto;
+    background-color: white;
+    border-spacing: 0;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+td, th {
+    min-width: 40px;
+    height: 25px;
+    text-align: center;
+}
+
+/* alternating rows */
+tr:nth-child(2n + 1) {
+    background-color: LightGray;
+}
+
+/* left column */
+tr td:first-child {
+    background-color: #36454e;
+    color: white;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+}
+
+/* top row */
+th {
+    background-color: #36454e;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* error messages produced by jquery */
+label.error {
+    color: #ff0505;
+    /* float: right; */
+}
+/* highlights input box for invalid input */
+input.error {
+    border: 1px solid #ff0505;
+    color: #ff0505;
+}
+
+
+#minColSlider {
+    margin: 0px 10px 5px 10px;
+}
+#maxColSlider, #minRowSlider, #maxRowSlider {
+    margin: 30px 10px 5px 10px;
+}
+
+
+#savedTables {
+    margin: 20px 10px 20px 10px;
+}
+
+#savedTables div {
+    overflow: auto;
+}
+ 
