@@ -1,0 +1,105 @@
+/*
+File: css/HW4P1Style.css
+GUI Assignment 4: Using the jQuery Plugin/UI with Your Dynamic Table 
+Part 1: Validation Plugin 
+
+This webpage creates a dynamic multiplication table based on user input using HTML, CSS, and JavaScript.
+The user input is now validated with jQeury.
+
+Peyton Somerville
+11/6/2021
+*/
+
+body {
+    background-color: #81b5df;
+}
+h1, h3{
+    text-align: center;
+}
+
+/* form format */
+#userInput {
+    margin: auto;
+    width: 500px;
+}
+.wrapper {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    list-style-type: none;
+    padding: 5px;
+    font-size: 90%;
+}
+#userInput li {
+    padding: 5px;
+}
+label.inputLabel {
+    float: left;
+    padding: 5px 40px 5px 20px;
+    font-size: 110%;
+}
+#userInput input {
+    float: right;
+    margin: 3px 10px 5px 10px;
+}
+#userInput button {
+    margin: 5px 10px 5px 180px;
+}
+
+#multTable {
+    overflow: auto;   /* makes table scrollable when too big for screen */
+    max-height: 600px;
+}
+
+table {
+    margin: auto;
+    background-color: white;
+    border-spacing: 0;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+td, th {
+    min-width: 40px;
+    height: 25px;
+    text-align: center;
+}
+
+/* alternating rows */
+tr:nth-child(2n + 1) {
+    background-color: LightGray;
+}
+
+/* left column */
+tr td:first-child {
+    background-color: #36454e;
+    color: white;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+}
+
+/* top row */
+th {
+    background-color: #36454e;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* error messages produced by jquery */
+label.error {
+    color: #ff0505;
+    float: left;
+    padding: 5px 20px 5px 20px;
+    font-size: 110%;
+    /*float: right;*/
+}
+/* highlights input box for invalid input */
+input.error {
+    border: 1px solid #ff0505;
+    color: #ff0505;
+}
+ 

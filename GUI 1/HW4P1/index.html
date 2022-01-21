@@ -1,0 +1,66 @@
+<!--
+File: index.html
+GUI Assignment 4: Using the jQuery Plugin/UI with Your Dynamic Table 
+Part 1: Validation Plugin 
+
+This webpage creates a dynamic multiplication table based on user input using HTML, CSS, and JavaScript.
+The user input is now validated with jQeury.
+
+Peyton Somerville
+11/6/2021
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Multiplication Table Generator</title>
+        <meta charset="utf-8">
+        <link href="css/HW4P1Style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Multiplication Table Generator</h1>
+        <h3>Fill in the form with integer values between -200 and 200.</h3>
+
+        <div id="userInput">
+            <form id="inputForm">
+                <ul class="wrapper">
+                    <li>
+                        <label for="minColVal" class="inputLabel">Minimum Column Value</label>
+                        <input type="number" id="minColVal" name="minColVal" value=1><br>
+                    </li>
+                    <li>
+                        <label for="maxColVal" class="inputLabel">Maximum Column Value</label>
+                        <input type="number" id="maxColVal" name="maxColVal" value=10><br>
+                    </li>
+                    <li>
+                        <label for="minRowVal" class="inputLabel">Minimum Row Value</label>
+                        <input type="number" id="minRowVal" name="minRowVal" value=1><br>
+                    </li>
+                    <li>
+                        <label for="maxRowVal" class="inputLabel">Maximum Row Value</label>
+                        <input type="number" id="maxRowVal" name="maxRowVal" value=10><br>
+                    </li>
+                    <li>
+                        <button id="submitBtn" type="submit">Generate Table</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+        <!-- The multiplication table will be built in this div -->
+        <div id="multTable"></div>
+
+
+        <!-- jQuery files -->
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.2/jquery.validate.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.2/additional-methods.js"></script>
+
+        <!-- file to handle jQuery custom validation rules -->
+        <script src="js/HW4P1Validation.js"></script>
+
+        <!-- file to generate mult table -->
+        <script src="js/HW4P1JavaScript.js"></script>
+    </body>
+</html>
