@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <title>2D Sierpinski Gasket</title>
+
+    <script type="text/javascript" src="Common/webgl-utils.js"></script>
+    <script type="text/javascript" src="Common/initShaders.js"></script>
+    <script type="text/javascript" src="Common/MV.js"></script>
+    <script type="text/javascript" src="gasket1.js"></script>
+</head>
+
+<body>
+    <canvas id="gl-canvas" width="512" height="512">
+        Oops ... your browser doesn't support the HTML5 canvas element
+    </canvas>
+
+    <br><br>
+
+    <label for="Points">Points:</label>
+    <input id="pointsSlider" type="range" id="npoints" name="npoints" min=500 max=5000 oninput="sliderUpdate(this.value)" onchange="sliderUpdate(this.value)">
+    <p id="sliderNumPoints">Current Number of Points: 2750</p>
+
+    <label for="Color">Color:</label>
+    <input type="color" id="colorPicker" oninput="colorUpdate(this.value)">
+
+    <br><br><br><br>
+
+    <button id="animate" onclick="startAnimation()">Animate</button>
+    <button id="display" onclick="display()">Display</button>
+    <button id="clear" onclick="resetTriangle()">Reset</button>
+
+    <br><br>
+
+    <button id="stopBtn" onclick="stop()" style="visibility:hidden;">Pause Animation</button>
+    <button id="resumeBtn" onclick="resume()" style="visibility:hidden;">Resume Animation</button>
+
+    <br><br>
+
+    <button id="speedIncrease" onclick="increaseSpeed()" style="visibility:hidden;">Increase Animation Speed</button>
+    <button id="speedDecrease" onclick="decreaseSpeed()" style="visibility:hidden;">Decrease Animation Speed</button>
+
+    <br><br>
+
+    <p id="status">Status:</p>
+
+</body>
+</html>
