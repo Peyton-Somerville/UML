@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <title>HW3</title>
+
+    <script type="text/javascript" src="HW3JavaScript.js"></script>
+</head>
+
+<body>
+    <canvas id="canvas" width="512" height="350" style="outline:1px solid black">
+        Oops ... your browser doesn't support the HTML5 canvas element
+    </canvas>
+
+    <br><br>
+
+    <div>
+        <label for="shapeSelect">Shape Select:</label>
+        <select id="shapeSelect" name="shapeSelect" onchange="reset()">
+            <option value="pentagon">Pentagon</option>
+            <option selected value="triangle">Triangle</option>
+            <option value="circle">Circle</option>
+            <option value="rectangle">Rectangle</option>
+            <option value="line">Line</option>
+        </select>
+
+        <!-- <label for="transSelect" style="margin-left:15px">Transformation:</label>
+        <select id="transSelect" name="transSelect">
+            <option value="translate">Translate</option>
+            <option value="scale">Scale</option>
+            <option value="rotate">Rotate</option>
+        </select> -->
+
+        <button onclick="rotate('left')" style="margin-left:15px">Rotate Left</button>
+        <button onclick="rotate('right')">Rotate Right</button>
+
+        <label for="rotationAngle" style="margin-left:15px">Rotation Angle:</label>
+        <select id="rotationAngle" name="rotationAngle" onchange="changeRotAngle()">
+            <option value="30">30°</option>
+            <option value="45">45°</option>
+            <option value="60">60°</option>
+            <option value="90">90°</option>
+        </select>
+
+        <br><br>
+
+        <button onclick="scale('down')" style="margin-left:201px">Scale Down</button>
+        <button onclick="scale('up')">Scale Up</button>
+
+        <br><br>
+
+        <p>Translation Instructions:</p>
+        <p>Choose the shape in the shape select menu. Then click on the shape to grab it, and click another location to move the shape there.</p>
+        <p id="selected">No shape grabbed</p>
+
+        <br><br>
+
+        <button onclick="reset()">Reset</button>
+    </div>
+</body>
+</html>
