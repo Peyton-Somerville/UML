@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <title>HW5</title>
+
+    <script type="text/javascript" src="HW5JavaScript.js"></script>
+</head>
+
+<body>
+    <canvas id="canvas" width="512" height="512" style="outline:1px solid black">
+        Oops ... your browser doesn't support the HTML5 canvas element
+    </canvas>
+
+    <br><br>
+
+    <div>
+        <label for="drawingAlg">Drawing Algorithm:</label>
+        <select id="drawingAlg" name="drawingAlg" onchange="updateInstructions()">
+            <option value="ddaLine">DDA Line</option>
+            <option value="midLine">Midpoint Line</option>
+            <option value="midCircle">Midpoint Circle</option>
+            <option value="midEllipse">Midpoint Ellipse</option>
+            <option value="bezierCurve">Bezier Curve</option>
+            <option value="hermiteCurve">Hermite Curve</option>
+            <option value="splineCurve">B-Spline Curve</option>
+
+        </select>
+
+        <button onclick="clearCanvas()">Clear</button>
+
+        <br><br>
+
+        <label for="primCompare">Draw with primative comparison?</label>
+        <select id="primCompare" name="primCompare">
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+        </select>
+
+        <br><br>
+
+        <div style="width:512px;">
+            <p>Drawing Instructions:</p>
+            <p id="instructions">Click once in the canvas to set the starting point, (x0, y0). Click again to set the ending point, (x1, y1). When both points are set, a line between them will be drawn automatically.</p>
+        </div>
+    </div>
+</body>
+</html>
