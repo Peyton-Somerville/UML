@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+attribute  vec4 vPosition;
+attribute  vec4 vColor;
+varying vec4 fColor;
+
+uniform mat4 modelViewMatrix;
+uniform mat4 projectionMatrix;
+
+void main()
+{
+    fColor = vColor;
+    gl_Position = projectionMatrix * modelViewMatrix * vPosition;
+}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+
+precision mediump float;
+
+varying  vec4 fColor;
+
+void main()
+{
+    gl_FragColor = fColor;
+}
+</script>
+
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="robotArm.js"></script>
+
+<label for="slider1">body angle -180</label>
+<input id="slider1" type="range" min="-180" max="180" step="10" value="0"/>
+<label for="slider1">180</label>
+
+<label for="slider1Rotation" style="margin-left:15px">rotate around:</label>
+<select id="slider1Rotation" name="slider1Rotation" onchange="updateBodyAxis()">
+    <option value="x">x-axis</option>
+    <option selected value="y">y-axis</option>
+    <option value="z">z-axis</option>
+</select>
+
+<br/><br/>
+
+<label for="slider2">lower arm angle -180</label>
+<input id="slider2" type="range" min="-180" max="180" step="10" value="0"/>
+<label for="slider2">180</label>
+
+<label for="slider2Rotation" style="margin-left:15px">rotate around:</label>
+<select id="slider2Rotation" name="slider2Rotation" onchange="updateLowerArmAxis()">
+    <option value="x">x-axis</option>
+    <option value="y">y-axis</option>
+    <option selected value="z">z-axis</option>
+</select>
+
+<br/><br/>
+
+<label for="slider3">upper arm angle -180</label>
+<input id="slider3" type="range" min="-180" max="180" step="10" value="0"/>
+<label for="slider3">180</label>
+
+<label for="slider3Rotation" style="margin-left:15px">rotate around:</label>
+<select id="slider3Rotation" name="slider3Rotation" onchange="updateUpperArmAxis()">
+    <option value="x">x-axis</option>
+    <option value="y">y-axis</option>
+    <option selected value="z">z-axis</option>
+</select>
+
+<br/><br/>
+
+<label for="slider4">finger 1 angle -180</label>
+<input id="slider4" type="range" min="-180" max="180" step="10" value="0"/>
+<label for="slider4">180</label>
+
+<label for="slider4Rotation" style="margin-left:15px">rotate around:</label>
+<select id="slider4Rotation" name="slider4Rotation" onchange="updateFinger1Axis()">
+    <option value="x">x-axis</option>
+    <option value="y">y-axis</option>
+    <option selected value="z">z-axis</option>
+</select>
+
+<br/><br/>
+
+<label for="slider5">finger 2 angle -180</label>
+<input id="slider5" type="range" min="-180" max="180" step="10" value="0"/>
+<label for="slider5">180</label>
+
+<label for="slider5Rotation" style="margin-left:15px">rotate around:</label>
+<select id="slider5Rotation" name="slider5Rotation" onchange="updateFinger2Axis()">
+    <option value="x">x-axis</option>
+    <option value="y">y-axis</option>
+    <option selected value="z">z-axis</option>
+</select>
+
+<br/><br/>
+
+<label for="slider6">finger 3 angle -180</label>
+<input id="slider6" type="range" min="-180" max="180" step="10" value="0"/>
+<label for="slider6">180</label>
+
+<label for="slider6Rotation" style="margin-left:15px">rotate around:</label>
+<select id="slider6Rotation" name="slider6Rotation" onchange="updateFinger3Axis()">
+    <option value="x">x-axis</option>
+    <option value="y">y-axis</option>
+    <option selected value="z">z-axis</option>
+</select>
+
+<br/><br/>
+
+
+<body>
+<canvas id="gl-canvas" width="512"" height="512">
+Oops ... your browser doesn't support the HTML5 canvas element
+</canvas>
+</body>
+</html>
