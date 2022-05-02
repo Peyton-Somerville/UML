@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <title>Shape Editor</title>
+
+    <!-- library to export as pdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script type="text/javascript" src="shapeEditor.js"></script>
+</head>
+
+<body>
+    <canvas id="canvas" width="1024" height="768" style="outline:2px solid black">
+        Oops ... your browser doesn't support the HTML5 canvas element
+    </canvas>
+
+    <div style="width:1100px; outline:1px solid black">
+        <p id="coordinates"></p>
+
+        <button onclick="rotate('left')">Rotate Left</button>
+        <button onclick="rotate('right')">Rotate Right</button>
+
+        <button onclick="scale('down')" id="scaleBtn" style="margin-left:140px">Scale</button>
+        <label for="scaleBtn" id="sliderVal">1.1</label>
+        <!-- <button onclick="scale('up')">Scale Up</button> -->
+
+        <button onclick="changeColor()" style="margin-left:140px">Change Color</button>
+
+        <button onclick="clearShape()" style="margin-left:140px">Clear Selected Shape</button>
+        <button onclick="reset()">Clear Canvas</button>
+
+        <br><br>
+
+        <label for="rotationAngle" style="margin-left:12px">Rotation Angle:</label>
+        <select id="rotationAngle" name="rotationAngle" onchange="changeRotAngle()">
+            <option value="30">30°</option>
+            <option value="45">45°</option>
+            <option value="60">60°</option>
+            <option value="90">90°</option>
+        </select>
+
+        <!-- <label for="colorChoice" style="margin-left:392px">Color:</label>
+        <select id="colorChoice" name="colorChoice">
+            <option value="#68d41c">green</option>
+            <option value="#d17d17">orange</option>
+            <option value="#f02913">red</option>
+        </select> -->
+
+        <input id="scalingSlider" type="range" name="scalingSlider" style="margin-left:110px" min=0.1 max=2.0 step=0.1 value=1.1 oninput="updateScaleFactor(this.value)" onchange="updateScaleFactor(this.value)">
+
+        <label for="Color" style="margin-left:125px">Color:</label>
+        <input type="color" id="colorPicker" oninput="colorUpdate(this.value)">
+
+        <button onclick="exportCanvas()" style="margin-left:165px">Export</button>
+        <label for="exportFileType" style="margin-left:5px">Export As:</label>
+        <select id="exportFileType" name="exportFileType">
+            <option value="png">.png</option>
+            <option value="jpeg">.jpg</option>
+            <option value="pdf">.pdf</option>
+            <option value="json">.json</option>
+        </select>
+        <br><br>
+
+        <button onclick="undo()">Undo</button>
+        <button onclick="copy()">Copy</button>
+        <button onclick="paste()">Paste</button>
+
+        <div style="margin-left:800px">Load: <input type="file" id="load"></div>
+    </div>
+</body>
+</html>
